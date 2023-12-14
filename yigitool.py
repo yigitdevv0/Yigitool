@@ -113,7 +113,6 @@ def menu():
    {8}--Remote Administrator Tools (RAT)
    {9}--Bug Bounty Tools
    {10}-DarkArmy Tools
-   {11}-1ucif3r's Tools
    {0}--Update The yigitool
    {99}-Exit
  """)
@@ -295,13 +294,13 @@ def crypter():
     lucifer()
 
 
-def updatedarkarmy():
+def updateyigitool():
     print ("This Tool is Only Available for Linux and Similar Systems. ")
     choiceupdate = raw_input("Continue Y / N: ")
     if choiceupdate in yes:
-        os.system("git clone https://github.com/D4RK-4RMY/DARKARMY.git")
-        os.system("cd DARKARMY && sudo bash ./update.sh")
-        os.system("darkarmy")
+        os.system("git clone https://github.com/yigitdevv0/Yigitool")
+        os.system("cd Yigitool && sudo bash ./update.sh")
+        os.system("Yigitool")
 
 
 def doork():
@@ -313,49 +312,6 @@ def doork():
         clearScr()
         doorkt = raw_input("Target : ")
         os.system("cd doork && python doork.py -t %s -o log.log" % doorkt)
-
-
-def dtools():
-    print('''\033[91m
-                               
-8888b.     db    88""Yb 88  dP    db    88""Yb 8b    d8 Yb  dP 
- 8I  Yb   dPYb   88__dP 88odP    dPYb   88__dP 88b  d88  YbdP  
- 8I  dY  dP__Yb  88"Yb  88"Yb   dP__Yb  88"Yb  88YbdP88   8P   
-8888Y"  dP""""Yb 88  Yb 88  Yb dP""""Yb 88  Yb 88 YY 88  dP    
-
-       [!] Some Tools By Dark4rmy Team [!]
-         
- \033[0m''')
-    print("   {1}--DarkScan ")
-    print("   {2}--DarkTor (Need Update)")
-    print("   {99}-Back To The Main Menu \n\n")
-    choice4 = raw_input("Dark4rmy >> ")
-    if choice4 == "1":
-        clearScr()
-        dscan()
-    if choice4 == "2":
-        clearScr()
-        dtor()
-    elif choice4 == "99":
-        clearScr()
-        menu()
-    elif choice4 == "":
-        clearScr()
-        menu()
-    else:
-        clearScr()
-        menu()
-    
-def dscan():
-    os.system("git clone https://github.com/D4RK-4RMY/Darkscan.git")
-    os.system("cd Darkscan && python3 darkscan.py")
-    clearScr()
-    dtools()
-    
-def dtor():
-    clearScr()
-    dtools()
-    
 
 
 def scanusers():
