@@ -100,7 +100,7 @@ $$\     $$\ $$\           $$\   $$\                         $$\
                                                                                                                                                                                                                    
 '''
 def menu():
-    print (darkarmylogo + """\033[1m
+    print ( + """\033[1m
    [!] Coded By yigit [!] https://yigitt.vercel.app [!]
 \033[0m
    {1}--Information Gathering
@@ -112,7 +112,6 @@ def menu():
    {7}--DDOS Tools
    {8}--Remote Administrator Tools (RAT)
    {9}--Bug Bounty Tools
-   {10}-DarkArmy Tools
    {0}--Update The yigitool
    {99}-Exit
  """)
